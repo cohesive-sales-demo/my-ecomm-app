@@ -6,7 +6,7 @@ RUN mkdir -p /app
 WORKDIR /app
 COPY . /app
 
-RUN go build orders/main.go
+RUN go build main.go
 EXPOSE 8080
 
 CMD ./main
