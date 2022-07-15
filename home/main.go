@@ -15,6 +15,7 @@ func hello(w http.ResponseWriter, _ *http.Request) {
 }
 
 func main() {
+
 	http.HandleFunc("/", hello)
 
 	err := http.ListenAndServe(":8080", nil)
