@@ -8,7 +8,7 @@ import (
 
 func hello(w http.ResponseWriter, _ *http.Request) {
 
-	_, err := fmt.Fprintf(w, "Akhil Hello Orders %d \n", utils.Trigger())
+	_, err := fmt.Fprintf(w, "<html> <head></head><body><h1>Hello Orders %d \n </h1></body></html>", utils.Trigger())
 	if err != nil {
 		panic(err)
 	}
